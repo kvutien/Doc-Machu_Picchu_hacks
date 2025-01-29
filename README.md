@@ -38,7 +38,7 @@ She can retrieve her money, from her savings and from the risk-sharing pool, as 
 However, if she declares a distress and calls for help, her situation is assessed by a community of peers and neighbors by a blockchain vote and she can be allowed to retrieve her money without penalties. The procedure is the following:
 - Reality of a need is determined by a peer-to-peer community **blockchain vote**, or any other means in the Machu Picchu initial bootstrap period.
 - **If the distress is confirme**d, she is allowed to retrieve any amount from her share in the common pool **without penalties**. 
-- She is also entitled to an additional community help. The amount of this community help is equal to *5x* (to be confirmed) the share that Ms *Lakshmi Devi* has accumulated in the community risk-sharing pool. This bonus rewards how faithfully she has contributed to the common help pool, that benefits everybody.
+- She is also entitled to an **additional community help** in case of distress. The amount of this community help is equal to *5x* (to be confirmed) the share that Ms *Lakshmi Devi* has accumulated in the community risk-sharing pool. This bonus rewards how faithfully she has contributed to the common help pool, that benefits everybody.
 - This additional help is taken from the risk-sharing pool of other participants in the community. Each contribution is determined by the scalar distance of their embedding vectors to the vector of Ms. *Lakshmi Devi*. The agreement is as follows: each of the 50 nearest contributes 1% of the amount, each of the 100 next nearest contributes 0.5% of the amount. The amount may be less if the shares of all the participants are too low.
 - There are measures to encourage long term participation and avoid cheats when people only start to contribute in the few months preceding the declaration of their distress. This can be simulated and evaluated during a hackathon project.
 	
@@ -57,8 +57,8 @@ Some possible projects in the hackathon could be:
 1. Project "Wonderful Life": Simulate all functions as placeholders and focus on the AI agent that cements the blocks together.
 2. Project "Three Musketeers": An agent that uses AI to simulate free text profiles of persons in need, living in various countries in the world. It uses an SLM to create embeddings and stores the profiles + embeddings on IPFS and their CID hashes on blockchain
 3. Project "Good Samaritan": An agent that would be given a person in need suffering a crop loss requesting an amount of ERC20 tokens, retrieve its CID on the blockchain, read on IPFS the profile + embedding of this person, find 100 closest profiles, transfer from each wallet of these persons 1/100 of the ERC20 amount needed to help the person in need
-4. Project "Good Samaritan": An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
-5. Project "Robin Hood": An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
+4. Project "Robin Hood": An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
+5. Project "Knights of the Round Table": An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
 	
 #	Project "Wonderful Life": Simulated Mutual-Help Community
 This project has its name from the 1946 movie of Frank Capra https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life. 
