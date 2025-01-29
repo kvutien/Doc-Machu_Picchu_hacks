@@ -8,11 +8,11 @@ The Inca citadel Machu Picchu was built using **huge stones, themselves well cra
 
 Machu Picchu is an open-source project that leverages 21st century tools for humanitarian purposes: https://kvutien-yes.medium.com/project-machu-picchu-white-paper-2024-part-1-735b60c55a92. 
 
-With the severe cuts that the new US Trump administration has imposed on humanitarian budgets, these organizations could take the opportunity to think outside their routine practices and consider the facilities brought by the Internet, low-cost low-power Raspberry-Pi's and similar, free Earth Observation resources and tools, blockchain technologies and Artiificial Intelligence.
+With the severe cuts that the new US Trump administration has imposed on humanitarian budgets, these organizations could take the opportunity **to think outside their routine practices** and consider the facilities brought by the Internet, low-cost low-power Raspberry-Pi's and similar, free Earth Observation resources and tools, blockchain technologies and Artiificial Intelligence.
 
 
 ## Executive Summary
-This document is a list of scenarios that can support hackathon projects in ETHGlobal 2025. The scenarios belong to the context of Machu Picchu.
+This document is a list of scenarios that can support hackathon projects in **ETHGlobal 2025**. The scenarios belong to the context of Machu Picchu.
 
 The Machu Picchu stories can inspire several competing ETHGlobal projects, where each project will focus on a particular aspect of Machu Picchu as best suits the skills of the team. Machu Picchu is like the Inca citadel of same name, that is made of huge stone blocks tightly fit together. These blocks of stone can be done independently. In past prototypes, Machu Picchu applied tools in DeFi, IPFS, AI, Earth Observation, low-cost Raspberry Pi-style SBCs with AI HATs.
 
@@ -33,12 +33,12 @@ The risk sharing scenario is as follows:
 
 She can retrieve her money, from her savings and from the risk-sharing pool, as follows:
 - She can retrieve money from her savings any time, without penalties.
-- She can retrieve money from her account in the risk-sharing pool also any time, with 20% penalty.
+- She can retrieve money from her account in the risk-sharing pool also any time, albeit with 20% penalty.
 	
-However, when she declares a distress and calls for help, her situation is assessed by a community of peers and neighbors by a blockchain vote and she can be allowed to retrieve her money without penalties. The procedure is the following:
-- Reality of a need is determined by a peer-to-peer community blockchain vote, or any other means in the Machu Picchu initial bootstrap period.
-- If the distress is confirmed, she is allowed to retrieve any amount from her share in the common pool without penalties. 
-- She is also entitled to an additional community help. The amount of this community help is equal to 5x the share that Ms *Lakshmi Devi* has accumulated in the community risk-sharing pool. This bonus rewards how she has faithfully contributed to the common help pool, that benefits everybody.
+However, if she declares a distress and calls for help, her situation is assessed by a community of peers and neighbors by a blockchain vote and she can be allowed to retrieve her money without penalties. The procedure is the following:
+- Reality of a need is determined by a peer-to-peer community **blockchain vote**, or any other means in the Machu Picchu initial bootstrap period.
+- **If the distress is confirme**d, she is allowed to retrieve any amount from her share in the common pool **without penalties**. 
+- She is also entitled to an additional community help. The amount of this community help is equal to *5x* (to be confirmed) the share that Ms *Lakshmi Devi* has accumulated in the community risk-sharing pool. This bonus rewards how faithfully she has contributed to the common help pool, that benefits everybody.
 - This additional help is taken from the risk-sharing pool of other participants in the community. Each contribution is determined by the scalar distance of their embedding vectors to the vector of Ms. *Lakshmi Devi*. The agreement is as follows: each of the 50 nearest contributes 1% of the amount, each of the 100 next nearest contributes 0.5% of the amount. The amount may be less if the shares of all the participants are too low.
 - There are measures to encourage long term participation and avoid cheats when people only start to contribute in the few months preceding the declaration of their distress. This can be simulated and evaluated during a hackathon project.
 	
@@ -51,14 +51,14 @@ In general, we could implement projects along the following workflow:
 - demo: decide that a farmer needs financial help.
 - from a vector database, Weaviate or equivalent, determine n closest profiles that can help, calculate the contributions and execute.
 
-See an example here: https://kvutien-yes.medium.com/hands-on-how-ai-can-help-persons-in-need-0fc5ca8e49a8
+See an AI example here: https://kvutien-yes.medium.com/hands-on-how-ai-can-help-persons-in-need-0fc5ca8e49a8
 
 Some possible projects in the hackathon could be:
-1. Simulate all functions as placeholders and focus on the AI agent that cements the blocks together.
-2. An agent that uses AI to simulate free text profiles of persons in need, living in various countries in the world. It uses an SLM to create embeddings and stores the profiles + embeddings on IPFS and their CID hashes on blockchain
-3. An agent that would be given a person in need suffering a crop loss requesting an amount of ERC20 tokens, retrieve its CID on the blockchain, read on IPFS the profile + embedding of this person, find 100 closest profiles, transfer from each wallet of these persons 1/100 of the ERC20 amount needed to help the person in need
-4. An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
-5. An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
+1. Project "Wonderful Life": Simulate all functions as placeholders and focus on the AI agent that cements the blocks together.
+2. Project "Three Musketeers": An agent that uses AI to simulate free text profiles of persons in need, living in various countries in the world. It uses an SLM to create embeddings and stores the profiles + embeddings on IPFS and their CID hashes on blockchain
+3. Project "Good Samaritan": An agent that would be given a person in need suffering a crop loss requesting an amount of ERC20 tokens, retrieve its CID on the blockchain, read on IPFS the profile + embedding of this person, find 100 closest profiles, transfer from each wallet of these persons 1/100 of the ERC20 amount needed to help the person in need
+4. Project "Good Samaritan": An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
+5. Project "Robin Hood": An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
 	
 #	Project "Wonderful Life": Simulated Mutual-Help Community
 This project has its name from the 1946 movie of Frank Capra https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life. 
