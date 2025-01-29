@@ -25,7 +25,7 @@ The following resources explain the story told by Machu Picchu and the technolog
 4. A Raspberry Pi serving as IPFS storage: https://kvutien-yes.medium.com/machu-picchu-persistent-ipfs-node-on-raspberry-pi3-part-1-fb6fd67e421a
 5. A simple illustration of Earth Observation to monitor crops: https://kvutien-yes.medium.com/ninja-code-make-a-satellite-mosaic-image-with-the-least-clouds-possible-8a25759f875b
 
-#	Principles of the self-help community
+#	Principles of the Mutual-help Community
 The risk sharing scenario is as follows:
 - Ms. *Lakshmi Devi* lives in Tamil Nadu, near Melur. She is married with 5 kids. She cultivates a small piece of land and has some poultry.
 - She publishes her profile in free form, with the help of DHAN Foundation (.https://dhan.org/). Her profile is embedded as a vector; the full text and the vector are stored on IPFS and the CID (the IPFS hash) is stored on the blockchain. Think of it like your LinkedIn profile. 🙂
