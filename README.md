@@ -27,7 +27,7 @@ The following resources explain the story told by Machu Picchu and the technolog
 
 #	Principles of the self-help community
 The risk sharing scenario is as follows:
-- Ms. Lakshmi Devi lives in Tamil Nadu, near Melur. She is married with 5 kids. She cultivates a small piece of land and has some poultry.
+- Ms. *Lakshmi Devi* lives in Tamil Nadu, near Melur. She is married with 5 kids. She cultivates a small piece of land and has some poultry.
 - She publishes her profile in free form, with the help of DHAN Foundation (.https://dhan.org/). Her profile is embedded as a vector; the full text and the vector are stored on IPFS and the CID (the IPFS hash) is stored on the blockchain. Think of it like your LinkedIn profile. 🙂
 - Every month, she can spare 2 €. She keeps in the blockchain (L2 Polygon for example) 1€ as private savings and she puts the other 1€ in a common risk-sharing pool. She accesses the blockchain from her simple mobile Nokia old phone with the support of a DHAN field helper, using a mobile tablet and Account Abstraction.
 
@@ -38,8 +38,8 @@ She can retrieve her money, from her savings and from the risk-sharing pool, as 
 However, when she declares a distress and calls for help, her situation is assessed by a community of peers and neighbors by a blockchain vote and she can be allowed to retrieve her money without penalties. The procedure is the following:
 - Reality of a need is determined by a peer-to-peer community blockchain vote, or any other means in the Machu Picchu initial bootstrap period.
 - If the distress is confirmed, she is allowed to retrieve any amount from her share in the common pool without penalties. 
-- She is also entitled to an additional community help. The amount of this community help is equal to 5x the share that Ms Lakshmi Devi has accumulated in the community risk-sharing pool. This bonus rewards how she has faithfully contributed to the common help pool, that benefits everybody.
-- This additional help is taken from the risk-sharing pool of other participants in the community. Each contribution is determined by the scalar distance of their embedding vectors to the vector of Ms. Lakshmi Devi. The agreement is as follows: each of the 50 nearest contributes 1% of the amount, each of the 100 next nearest contributes 0.5% of the amount. The amount may be less if the shares of all the participants are too low.
+- She is also entitled to an additional community help. The amount of this community help is equal to 5x the share that Ms *Lakshmi Devi* has accumulated in the community risk-sharing pool. This bonus rewards how she has faithfully contributed to the common help pool, that benefits everybody.
+- This additional help is taken from the risk-sharing pool of other participants in the community. Each contribution is determined by the scalar distance of their embedding vectors to the vector of Ms. *Lakshmi Devi*. The agreement is as follows: each of the 50 nearest contributes 1% of the amount, each of the 100 next nearest contributes 0.5% of the amount. The amount may be less if the shares of all the participants are too low.
 - There are measures to encourage long term participation and avoid cheats when people only start to contribute in the few months preceding the declaration of their distress. This can be simulated and evaluated during a hackathon project.
 	
 #	List of possible projects
@@ -102,13 +102,13 @@ Bonus: we generate and use a fungible token.
 This project has its name from the legendary outlaw who stole from the rich to give to the poor, symbolizing the idea of helping those in need, https://en.wikipedia.org/wiki/Robin_Hood. 
 
 The purpose of the agent is to help us determine generally the terms and conditions of the mutual help agreement that will be written on stone in the blockchain. It aims to motivate people to participate and also to avoid misbehaviors. The rough idea is as follows:
-- Ms. Lakshmi Devi has one wallet for personal savings and one wallet for mutual help. We are mainly concerned with the latter.
+- Ms. *Lakshmi Devi* has one wallet for personal savings and one wallet for mutual help. We are mainly concerned with the latter.
 - She can do freely inflows and outflows with her personal savings wallet.
 - Her personal mutual help wallet has mostly inflows. Any outflow bears a 20% retrieval fee. This retrieval fee will go to a community mutual help wallet.
-- The retrieval fee will not apply, or apply partially, if the retrieval need of Ms. Lakshmi Devi is approved by the community.
-- In addition, in case of approval, Ms. Lakshmi Devi will also receive help taken from the mutual help wallets of her "close neighbors". The degree of proximity of each neighbor is measured by the scalar distance of their profile embeddings from the profile embedding of Ms. Lakshmi Devi.
-- The total amount of mutual help is measured by the "merit" of Ms. Lakshmi Devi in the mutual help: regularity in contributing to her mutual help wallet, absolute importance of her mutual help wallet, amounts contributed in recent months, etc. 
-- When defining the rules, we want to reward Ms. Lakshmi Devi based on her seniority in the mutual help. The seniority of the contributions is also important: massive recent contributions will count less than the same amount spread over longer time..
+- The retrieval fee will not apply, or apply partially, if the retrieval need of Ms. *Lakshmi Devi* is approved by the community.
+- In addition, in case of approval, Ms. *Lakshmi Devi* will also receive help taken from the mutual help wallets of her "close neighbors". The degree of proximity of each neighbor is measured by the scalar distance of their profile embeddings from the profile embedding of Ms. *Lakshmi Devi*.
+- The total amount of mutual help is measured by the "merit" of Ms. *Lakshmi Devi* in the mutual help: regularity in contributing to her mutual help wallet, absolute importance of her mutual help wallet, amounts contributed in recent months, etc. 
+- When defining the rules, we want to reward Ms. *Lakshmi Devi* based on her seniority in the mutual help. The seniority of the contributions is also important: massive recent contributions will count less than the same amount spread over longer time..
 
 In order to refine the rules, the agent in this project will use AI to imagine varied contribution behaviors, to evaluate their degree of compliance to solidarity practices, and propose rules to reward well-behaved behaviors and penalize the bad practices.
 
@@ -116,7 +116,7 @@ The same agent will be used in operations as a dashboard to show people how, in 
 #	Project "Knights of the Round Table": Loss Simulation & Distress Voting
 This project has its name from the legendary King Arthur and his Knights of the Round Table, symbolizing a diverse group who come together to serve a common purpose, upholding justice and protecting the kingdom https://youtu.be/4Gt99POfaSk. 
 
-The purpose of the agent is to gather a number of persons closest persons to the demander (for example Ms. Lakshmi Devi) and ask them to vote whether they agree or not with the actual need. Closeness is measured by the scalar distance of the embeddings.
+The purpose of the agent is to gather a number of persons closest persons to the demander (for example Ms. *Lakshmi Devi*) and ask them to vote whether they agree or not with the actual need. Closeness is measured by the scalar distance of the embeddings.
 
 #	Work in progress…
 Stay tuned.
