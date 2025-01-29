@@ -68,13 +68,13 @@ It focuses on building the overall cement that link the blocks together. This me
 ![Mutual Help](./images/1-Mutual-Help_Community.png)
 
 #	Project "*Three Musketeers*": Profiles Creation, Embedding and Storage
-This project has its name from the French novel of the same name https://youtu.be/if4AL4fXrT8. Their famous motto is "All for one, and one for all"
+This project has its name from the French novel of the same name https://youtu.be/if4AL4fXrT8. Their famous motto is "*All for one, and one for all*"
 
 The focus of this project is on the database adapters, IPFS and vector database, as well as on storing the IPFS hash (the CID) on the blockchain).
 - We read a profile from a text file
-- Bonus: Eventually we do some magic AI on the profile to find which blockchain account it is associated to. This will be needed when Machu Picchu will use Account Abstraction, but this phase can be simulated in the current hackathon.
-- Bonus: If time allows, we create the account if it doesn't exist. This means that we do the Account Abstraction onboarding step. But this phase can be simulated in the current hackathon.
-- Bonus: potentially in the future we can even use AI Speech-To-Text to write the text of the profile. It is anyhow in free form.
+  - Bonus: Eventually we do some magic AI on the profile to find which blockchain account it is associated to. This will be needed when Machu Picchu will use Account Abstraction, but this phase can be simulated in the current hackathon.
+  - Bonus: If time allows, we create the account if it doesn't exist. This means that we do the Account Abstraction onboarding step. But this phase can be simulated in the current hackathon.
+  - Bonus: potentially in the future we can even use AI Speech-To-Text to write the text of the profile. It is anyhow in free form.
 - We do embeddings of the profile. Eventually we do some magic AI on the profile (I don't know yet what magic 😉) before doing the embeddings.
 - We store the whole on IPFS and receive back the CID (the IPFS hash) of this person's profile
 - We store the CID on the blockchain account of the person. 
