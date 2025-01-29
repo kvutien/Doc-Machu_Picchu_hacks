@@ -54,20 +54,20 @@ In general, we could implement projects along the following workflow:
 See an AI example here: https://kvutien-yes.medium.com/hands-on-how-ai-can-help-persons-in-need-0fc5ca8e49a8
 
 Some possible projects in the hackathon could be:
-1. Project "Wonderful Life": Simulate all functions as placeholders and focus on the AI agent that cements the blocks together.
-2. Project "Three Musketeers": An agent that uses AI to simulate free text profiles of persons in need, living in various countries in the world. It uses an SLM to create embeddings and stores the profiles + embeddings on IPFS and their CID hashes on blockchain
-3. Project "Good Samaritan": An agent that would be given a person in need suffering a crop loss requesting an amount of ERC20 tokens, retrieve its CID on the blockchain, read on IPFS the profile + embedding of this person, find 100 closest profiles, transfer from each wallet of these persons 1/100 of the ERC20 amount needed to help the person in need
-4. Project "Robin Hood": An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
-5. Project "Knights of the Round Table": An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
+1. **Project "Wonderful Life"**: Simulate all functions as placeholders and focus on the AI agent that cements the blocks together.
+2. **Project "Three Musketeers"**: An agent that uses AI to simulate free text profiles of persons in need, living in various countries in the world. It uses an SLM to create embeddings and stores the profiles + embeddings on IPFS and their CID hashes on blockchain
+3. **Project "Good Samaritan"**: An agent that would be given a person in need suffering a crop loss requesting an amount of ERC20 tokens, retrieve its CID on the blockchain, read on IPFS the profile + embedding of this person, find 100 closest profiles, transfer from each wallet of these persons 1/100 of the ERC20 amount needed to help the person in need
+4. **Project "Robin Hood"**: An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
+5. **Project "Knights of the Round Table"**: An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
 	
-#	Project "Wonderful Life": Simulated Mutual-Help Community
+#	Project "*Wonderful Life*": Simulated Mutual-Help Community
 This project has its name from the 1946 movie of Frank Capra https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life. 
 
 It focuses on building the overall cement that link the blocks together. This means building the transition tree, setting up live interfaces between the Agents and their plugins, the Clients (distress listener, blockchain), the database Adaptors (vector database, IPFS). The internals of all functions are simulated enough to action the state transitions and the actions.
 - To be further detailed with better knowledge of the agent customization mechanisms of Eliza framework
 ![Mutual Help](./images/1-Mutual-Help_Community.png)
 
-#	Project "Three Musketeers": Profiles Creation, Embedding and Storage
+#	Project "*Three Musketeers*": Profiles Creation, Embedding and Storage
 This project has its name from the French novel of the same name https://youtu.be/if4AL4fXrT8. Their famous motto is "All for one, and one for all"
 
 The focus of this project is on the database adapters, IPFS and vector database, as well as on storing the IPFS hash (the CID) on the blockchain).
@@ -80,7 +80,7 @@ The focus of this project is on the database adapters, IPFS and vector database,
 - We store the CID on the blockchain account of the person. 
 ![Profile Storage](./images/2-Profile_Storage.png)
 
-#	Project "Good Samaritan": Profile Matching, Contribution Retrieval
+#	Project "*Good Samaritan*": Profile Matching, Contribution Retrieval
 This project has its name from the Gospel parable of the Good Samaritan, where a victim of robbers is ignored by important people and helped by a good man https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life. 
 
 The focus of this project is on the heart of the decentralized risk-sharing. 
@@ -98,7 +98,7 @@ This project applies the following story:
 - For each virtual account, we do a transfer to the account of the person in need.
 - 
 Bonus: we generate and use a fungible token.
-#	Project "Robin Hood": Assistance Entitlement dashboard
+#	Project "*Robin Hood*": Assistance Entitlement dashboard
 This project has its name from the legendary outlaw who stole from the rich to give to the poor, symbolizing the idea of helping those in need, https://en.wikipedia.org/wiki/Robin_Hood. 
 
 The purpose of the agent is to help us determine generally the terms and conditions of the mutual help agreement that will be written on stone in the blockchain. It aims to motivate people to participate and also to avoid misbehaviors. The rough idea is as follows:
@@ -113,7 +113,7 @@ The purpose of the agent is to help us determine generally the terms and conditi
 In order to refine the rules, the agent in this project will use AI to imagine varied contribution behaviors, to evaluate their degree of compliance to solidarity practices, and propose rules to reward well-behaved behaviors and penalize the bad practices.
 
 The same agent will be used in operations as a dashboard to show people how, in case of crisis, their behaviors will result in community help, to motivate good behaviors.
-#	Project "Knights of the Round Table": Loss Simulation & Distress Voting
+#	Project "*Knights of the Round Table*": Loss Simulation & Distress Voting
 This project has its name from the legendary King Arthur and his Knights of the Round Table, symbolizing a diverse group who come together to serve a common purpose, upholding justice and protecting the kingdom https://youtu.be/4Gt99POfaSk. 
 
 The purpose of the agent is to gather a number of persons closest persons to the demander (for example Ms. *Lakshmi Devi*) and ask them to vote whether they agree or not with the actual need. Closeness is measured by the scalar distance of the embeddings.
