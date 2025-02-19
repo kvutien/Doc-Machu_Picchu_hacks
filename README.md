@@ -147,6 +147,16 @@ All the project descriptions are listed here (select event = *Agentic Ethereum*)
 - Security and Access Control
 - Tokenomics
 
+## Machu Picchu Adaptations
+Gamification is an interesting track of thought. We are doing humanitarian aid too seriously. Gamifying it is also consistent with peer to peer philosophy.
+
+1Learning from this hackathon, our scenarios can be adapted  where 
+1. 1️⃣ small farmers would earn points by keeping their profiles up to date (what they sowed, what they harvested, what did they sow etc.), in project "*Three Musketeers*"
+2. 2️⃣ field helper staff would compete and win points by motivating small farmers to update their profiles 
+3. 3️⃣ by on-boarding more small farmers etc. 
+4. 4️⃣ and why not, chiefs of village would compete to cross-validate profiles of the villagers, 
+5. 5️⃣ and why not detect anomalies in satellite images, in project "*Knights of the Round Table*"
+
 #	Work in progress…
 Stay tuned.
 
