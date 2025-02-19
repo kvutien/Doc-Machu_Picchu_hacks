@@ -11,7 +11,7 @@ Machu Picchu is an open-source project that leverages 21st century tools for hum
 With the severe cuts that the new US Trump administration has imposed on humanitarian budgets, these organizations could take the opportunity **to think outside their routine practices** and consider the facilities brought by the Internet, low-cost low-power Raspberry-Pi's and similar, free Earth Observation resources and tools, blockchain technologies and Artiificial Intelligence.
 
 
-## Executive Summary
+# Executive Summary
 This document is a list of scenarios that can support hackathon projects in **ETHGlobal 2025**. The scenarios belong to the context of Machu Picchu.
 
 The Machu Picchu stories can inspire several competing ETHGlobal projects, where each project will focus on a particular aspect of Machu Picchu as best suits the skills of the team. Machu Picchu is like the Inca citadel of same name, that is made of huge stone blocks tightly fit together. These blocks of stone can be done independently. In past prototypes, Machu Picchu applied tools in DeFi, IPFS, AI, Earth Observation, low-cost Raspberry Pi-style SBCs with AI HATs.
@@ -19,13 +19,13 @@ The Machu Picchu stories can inspire several competing ETHGlobal projects, where
 The AI Agents are potentially Machu Picchu blocks. In this hackathon each project may choose to address a subset of Machu Picchu functions that best suits the skills of the team yet to be built. Even if you prefer doing a hackathon project alone around Machu Picchu, you are heartily welcome.
 
 The following resources explain the story told by Machu Picchu and the technologies that have been already prototyped:
-1. A 10' video of overall Machu Picchu: https://youtu.be/z1ylfi60ES0
-2. A White Paper: https://github.com/kvutien/Project-Machu_Picchu_White_Paper_2024
-3. An example of how AI can help the persons in need: https://medium.com/@kvutien-yes/hands-on-how-ai-can-help-persons-in-need-0fc5ca8e49a8
-4. A Raspberry Pi serving as IPFS storage: https://kvutien-yes.medium.com/machu-picchu-persistent-ipfs-node-on-raspberry-pi3-part-1-fb6fd67e421a
-5. A simple illustration of Earth Observation to monitor crops: https://kvutien-yes.medium.com/ninja-code-make-a-satellite-mosaic-image-with-the-least-clouds-possible-8a25759f875b
+1. A 10' video of **overall Machu Picchu**: https://youtu.be/z1ylfi60ES0
+2. A **White Paper**: https://github.com/kvutien/Project-Machu_Picchu_White_Paper_2024
+3. An example of how **AI** can help the persons in need: https://medium.com/@kvutien-yes/hands-on-how-ai-can-help-persons-in-need-0fc5ca8e49a8
+4. A Raspberry Pi serving as **IPFS storage**: https://kvutien-yes.medium.com/machu-picchu-persistent-ipfs-node-on-raspberry-pi3-part-1-fb6fd67e421a
+5. A simple illustration of **Earth Observation** to monitor crops: https://kvutien-yes.medium.com/ninja-code-make-a-satellite-mosaic-image-with-the-least-clouds-possible-8a25759f875b
 
-##	Principles of the Mutual-Help Community
+#	Principles of the Mutual-Help Community
 The risk sharing scenario is as follows:
 - Ms. *Lakshmi Devi* lives in Tamil Nadu, near Melur. She is married with 5 kids. She cultivates a small piece of land and has some poultry.
 - She publishes her profile in free form, with the help of DHAN Foundation (.https://dhan.org/). Her profile is embedded as a vector; the full text and the vector are stored on IPFS and the CID (the IPFS hash) is stored on the blockchain. Think of it like your LinkedIn profile. 🙂
@@ -42,7 +42,7 @@ However, if she declares a distress and calls for help, her situation is assesse
 - This additional help is taken from the risk-sharing pool of other participants in the community. Each contribution is determined by the scalar distance of their embedding vectors to the vector of Ms. *Lakshmi Devi*. The agreement is as follows: each of the 50 nearest contributes 1% of the amount, each of the 100 next nearest contributes 0.5% of the amount. The amount may be less if the shares of all the participants are too low.
 - There are measures to encourage long term participation and avoid cheats when people only start to contribute in the few months preceding the declaration of their distress. This can be simulated and evaluated during a hackathon project.
 	
-##	List of possible projects
+#	List of possible projects
 In general, we could implement projects along the following workflow:
 - start with a freeform list of profiles of small farmers worldwide. An initial version has been started: https://github.com/kvutien/Doc-Simulated_profiles_Persons_in_Need
 - use an embedding tool like Weaviate or VoyageAI to generate embeddings.
@@ -60,6 +60,7 @@ Some possible projects in the hackathon could be:
 4. **Project "Robin Hood"**: An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
 5. **Project "Knights of the Round Table"**: An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
 	
+#	Projects Detailed
 ##	Project "*Wonderful Life*": Simulated Mutual-Help Community
 This project has its name from the 1946 movie of Frank Capra https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life. 
 
@@ -92,20 +93,21 @@ To be defined… This could be a gamification of the previous project.
 This project has its name from the Gospel parable of the Good Samaritan, where a victim of robbers is ignored by important people and helped by a good man https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life. 
 
 The focus of this project is on the heart of the decentralized risk-sharing. 
+![Risk Sharing](./images/3-Risk-Sharing.png)
 
 It does matching of the profile embedding of a person in need and its neighbors, in the sense that they all share similar activities and risks. From the resulting matching, based on the agreement that the closer the helper is to the person in need, the higher will be the help amount. The agent will calculate the amount to transfer from each "neighbor" and launch the blockchain transactions.
 
 This project applies the following story:
-- There are NParticipant participants to the risk sharing. Say *NParticipant* = 10. We choose 10 because it is the usual number of virtual accounts generated by an Ethereum development environment, Hardhat, Truffle or Ganache.
+- There are *poolSize* participants to the risk sharing pool. Say *poolSize* = 10. We choose 10 because it is the usual number of virtual accounts generated by an Ethereum development environment, Hardhat, Truffle or Ganache. In reality, the number would be much bigger.
 - One person is in need. Let's assume it is virtual account 1. The 9 others are potential helpers.
-- We assume that the amount required to help the person in need is *HelpNeeded*=0.01 ETH.
+- We assume that the amount required to help the person in need is *helpNeeded* = 0.01 ETH.
 - Each virtual account will have the same amount of ETH initially. It's the one generated by the development environment simulator (10 ETH).
 - We (the agent) retrieve from IPFS the profile embedding vector of the person in need and the 9 others. Alternatively, we already have in a vector database all profiles.
 - We do a normalized scalar search to find the closest profiles in ascending order of the cosine.
 - We do a table lookup for the percentage of the total help each neighbor has agreed to contribute. For example, the 2 closest contribute for 10% each, the 4 next contribute for 5% each, total is 40%. The scenario stops there. Note that these figures will be different in real life. More probably, the first 20 closest will contribute for 1% each, the next 40 will contribute for 0.5%, the next 80 will contribute for 0.25%, the next 160 will contribute for 0.125%, the next 320 will contribute for 0.0625%.
 - For each virtual account, we do a transfer to the account of the person in need.
 
-Bonus: we generate and use a fungible token.
+Bonus: in the constructor of the agent, we generate and use a fungible token named **HELP**. In Machu Picchu, the HELP tokens would be minted at the beginning of the project.
 ##	Project "*Robin Hood*": Assistance Entitlement dashboard
 This project has its name from the legendary outlaw who stole from the rich to give to the poor, symbolizing the idea of helping those in need, https://en.wikipedia.org/wiki/Robin_Hood. 
 
@@ -122,10 +124,28 @@ The agent in this project will use AI to imagine varied contribution behaviors, 
 
 The same agent will be used in operations as a dashboard to show people how, in case of crisis, their behaviors will result in community help, to motivate good behaviors.
 ##	Project "*Knights of the Round Table*": Loss Simulation & Distress Voting
+This project can be gamified, by its nature.
+
 This project has its name from the legendary King Arthur and his Knights of the Round Table, symbolizing a diverse group who come together to serve a common purpose, upholding justice and protecting the kingdom https://youtu.be/4Gt99POfaSk. 
 
 The purpose of the agent is to gather a number of persons closest persons to the demander (for example Ms. *Lakshmi Devi*) and ask them to vote whether they agree or not with the actual need. Closeness is measured by the scalar distance of the embeddings.
 ![Knights of the Round Table](./images/3-round_table.jpg)
+
+# Lessons learned from the ETH Global hackathon *Agentic Ethereum*
+All the project descriptions are listed here (select event = *Agentic Ethereum*): https://ethglobal.com/showcase
+
+## My analysis of the 10 Finalists:
+### Application domains
+- **Digital Assets Management**: tokens, [*Bouncer AI*](https://ethglobal.com/showcase/bouncer-ai-1sd06)  offers a platform for creating token launchpads with AI-driven access controls, [*Streme.fun*](https://ethglobal.com/showcase/streme-fun-4dppy) enables the easy deployment of tokens, 
+- **AI-Enhanced Social Media**: [*SmolUniverse*](https://ethglobal.com/showcase/smol-universe-nqh0z) simulates a fictional universe where AI clones interact with tweets and memes, [*PvPvAI*](https://ethglobal.com/showcase/pvpvai-d66a8) involves AI agents discussing and sreading false news on token markets
+- **DeFi Tooling and Optimisation**: [*Nimble*](https://ethglobal.com/showcase/nimble-d5y6f) orchestrates AI solver agents to find optimal swap routes, [*Streme.fun*](https://ethglobal.com/showcase/streme-fun-4dppy) integrates Superfluid for streaming tokens and Uniswap for liquidity provision
+### Style of projects
+- **AI-Driven Personalised Experiences**: [*Bouncer AI*](https://ethglobal.com/showcase/bouncer-ai-1sd06) assesses users based on their knowledge, vibe, and wallet activity, [*PvPvAI*](https://ethglobal.com/showcase/pvpvai-d66a8) uses AI agents with unique personality trait, [*SecretAgent.sh*](https://ethglobal.com/showcase/secretagent-nkz1u) analyses agent behaviour to provide custom security recommendation
+- **Gamified Learning**: [*PvPvAI*](https://ethglobal.com/showcase/pvpvai-d66a8) gamifies the prediction of token market movements, 
+- **(DAO) Tooling**: [*Bouncer AI*](https://ethglobal.com/showcase/bouncer-ai-1sd06) help DAOs to decide who gets access to governance tokens, [*PvPvAI*](https://ethglobal.com/showcase/pvpvai-d66a8) help with automated decision-making and prediction within a DAO, [*SecretAgent.sh*](https://ethglobal.com/showcase/secretagent-nkz1u)  provides the secure secret management infrastructure required for a DAO
+### Technology
+- Security and Access Control
+- Tokenomics
 
 #	Work in progress…
 Stay tuned.
