@@ -16,7 +16,7 @@ This document is a list of scenarios that can support hackathon projects in **ET
 
 The Machu Picchu stories can inspire several competing ETHGlobal projects, where each project will focus on a particular aspect of Machu Picchu as best suits the skills of the team. Machu Picchu is like the Inca citadel of same name, that is made of huge stone blocks tightly fit together. These blocks of stone can be done independently. In past prototypes, Machu Picchu applied tools in DeFi, IPFS, AI, Earth Observation, low-cost Raspberry Pi-style SBCs with AI HATs.
 
-The AI Agents are potentially a cement to fasten the Machu Picchu blocks together. In this hackathon each project may choose to address a subset of Machu Picchu functions that best suits the skills of the team yet to be built. Even if you prefer doing a hackathon project alone around Machu Picchu, you are heartily welcome.
+The AI Agents are potentially Machu Picchu blocks. In this hackathon each project may choose to address a subset of Machu Picchu functions that best suits the skills of the team yet to be built. Even if you prefer doing a hackathon project alone around Machu Picchu, you are heartily welcome.
 
 The following resources explain the story told by Machu Picchu and the technologies that have been already prototyped:
 1. A 10' video of overall Machu Picchu: https://youtu.be/z1ylfi60ES0
@@ -25,7 +25,7 @@ The following resources explain the story told by Machu Picchu and the technolog
 4. A Raspberry Pi serving as IPFS storage: https://kvutien-yes.medium.com/machu-picchu-persistent-ipfs-node-on-raspberry-pi3-part-1-fb6fd67e421a
 5. A simple illustration of Earth Observation to monitor crops: https://kvutien-yes.medium.com/ninja-code-make-a-satellite-mosaic-image-with-the-least-clouds-possible-8a25759f875b
 
-#	Principles of the Mutual-help Community
+##	Principles of the Mutual-Help Community
 The risk sharing scenario is as follows:
 - Ms. *Lakshmi Devi* lives in Tamil Nadu, near Melur. She is married with 5 kids. She cultivates a small piece of land and has some poultry.
 - She publishes her profile in free form, with the help of DHAN Foundation (.https://dhan.org/). Her profile is embedded as a vector; the full text and the vector are stored on IPFS and the CID (the IPFS hash) is stored on the blockchain. Think of it like your LinkedIn profile. 🙂
@@ -42,7 +42,7 @@ However, if she declares a distress and calls for help, her situation is assesse
 - This additional help is taken from the risk-sharing pool of other participants in the community. Each contribution is determined by the scalar distance of their embedding vectors to the vector of Ms. *Lakshmi Devi*. The agreement is as follows: each of the 50 nearest contributes 1% of the amount, each of the 100 next nearest contributes 0.5% of the amount. The amount may be less if the shares of all the participants are too low.
 - There are measures to encourage long term participation and avoid cheats when people only start to contribute in the few months preceding the declaration of their distress. This can be simulated and evaluated during a hackathon project.
 	
-#	List of possible projects
+##	List of possible projects
 In general, we could implement projects along the following workflow:
 - start with a freeform list of profiles of small farmers worldwide. An initial version has been started: https://github.com/kvutien/Doc-Simulated_profiles_Persons_in_Need
 - use an embedding tool like Weaviate or VoyageAI to generate embeddings.
@@ -54,33 +54,41 @@ In general, we could implement projects along the following workflow:
 See an AI example here: https://kvutien-yes.medium.com/hands-on-how-ai-can-help-persons-in-need-0fc5ca8e49a8
 
 Some possible projects in the hackathon could be:
-1. **Project "Wonderful Life"**: Simulate all functions as placeholders and focus on the AI agent that cements the blocks together.
-2. **Project "Three Musketeers"**: An agent that uses AI to simulate free text profiles of persons in need, living in various countries in the world. It uses an SLM to create embeddings and stores the profiles + embeddings on IPFS and their CID hashes on blockchain
+1. **Project "Wonderful Life"**: An agent that uses AI to simulate free text profiles of persons in need, living in various countries in the world. It uses an SLM to create embeddings and stores the profiles + embeddings on IPFS and their CID hashes on blockchain. Given a Program sheet of an international Helper Program, it finds all potential beneficiaries of such Helper Program.
+2. **Project "Three Musketeers"**: TO BE DEFINED
 3. **Project "Good Samaritan"**: An agent that would be given a person in need suffering a crop loss requesting an amount of ERC20 tokens, retrieve its CID on the blockchain, read on IPFS the profile + embedding of this person, find 100 closest profiles, transfer from each wallet of these persons 1/100 of the ERC20 amount needed to help the person in need
 4. **Project "Robin Hood"**: An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
 5. **Project "Knights of the Round Table"**: An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
 	
-#	Project "*Wonderful Life*": Simulated Mutual-Help Community
+##	Project "*Wonderful Life*": Simulated Mutual-Help Community
 This project has its name from the 1946 movie of Frank Capra https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life. 
 
 It focuses on building the overall cement that link the blocks together. This means building the transition tree, setting up live interfaces between the Agents and their plugins, the Clients (distress listener, blockchain), the database Adaptors (vector database, IPFS). The internals of all functions are simulated enough to action the state transitions and the actions.
-- To be further detailed with better knowledge of the agent customization mechanisms of Eliza framework
+
 ![Mutual Help](./images/1-Mutual-Help_Community.png)
 
-#	Project "*Three Musketeers*": Profiles Creation, Embedding and Storage
-This project has its name from the French novel of the same name https://youtu.be/if4AL4fXrT8. Their famous motto is "*All for one, and one for all*"
-
-The focus of this project is on the database adapters, IPFS and vector database, as well as on storing the IPFS hash (the CID) on the blockchain).
+The focus of this project is on the database adapters, IPFS and vector database, as well as on storing the IPFS hash (the CID) on the blockchain). In the limits of the hackathon, we implement only the Helper Org part.
 - We read a profile from a text file
   - Bonus: Eventually we do some magic AI on the profile to find which blockchain account it is associated to. This will be needed when Machu Picchu will use Account Abstraction, but this phase can be simulated in the current hackathon.
   - Bonus: If time allows, we create the account if it doesn't exist. This means that we do the Account Abstraction onboarding step. But this phase can be simulated in the current hackathon.
   - Bonus: potentially in the future we can even use AI Speech-To-Text to write the text of the profile. It is anyhow in free form.
-- We do embeddings of the profile. Eventually we do some magic AI on the profile (I don't know yet what magic 😉) before doing the embeddings.
+- We do embeddings of the profile. In the future we do some magic AI on the profile (I don't know yet what magic 😉) before doing the embeddings.
 - We store the whole on IPFS and receive back the CID (the IPFS hash) of this person's profile
 - We store the CID on the blockchain account of the person. 
 ![Profile Storage](./images/2-Profile_Storage.png)
 
-#	Project "*Good Samaritan*": Profile Matching, Contribution Retrieval
+In the Helper Org part:
+- We read a Help Program Sheet and embed it.
+- We find all profiles of Persons in Need that are closest to the objectives described in the Program Sheet.
+
+**Cheery on the cake**: we implement a Tweeter agent that discusses with the potential donors. In the future, we will implement a gamification of several parts of the whole process. Humanitarian Aid is done too seriously today because it is centralized in "**serious**" organizations.
+
+##	Project "*Three Musketeers*": Profiles Creation, Embedding and Storage
+This project has its name from the French novel of the same name https://youtu.be/if4AL4fXrT8. Their famous motto is "*All for one, and one for all*"
+
+To be defined… This could be a gamification of the previous project.
+
+##	Project "*Good Samaritan*": Profile Matching, Contribution Retrieval
 This project has its name from the Gospel parable of the Good Samaritan, where a victim of robbers is ignored by important people and helped by a good man https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life. 
 
 The focus of this project is on the heart of the decentralized risk-sharing. 
@@ -98,7 +106,7 @@ This project applies the following story:
 - For each virtual account, we do a transfer to the account of the person in need.
 
 Bonus: we generate and use a fungible token.
-#	Project "*Robin Hood*": Assistance Entitlement dashboard
+##	Project "*Robin Hood*": Assistance Entitlement dashboard
 This project has its name from the legendary outlaw who stole from the rich to give to the poor, symbolizing the idea of helping those in need, https://en.wikipedia.org/wiki/Robin_Hood. 
 
 The purpose of the agent is to help us determine generally the terms and conditions of the mutual help agreement that will be written on stone in the blockchain. It aims to motivate people to participate and also to avoid misbehaviors. The rough idea is as follows:
@@ -113,7 +121,7 @@ The purpose of the agent is to help us determine generally the terms and conditi
 The agent in this project will use AI to imagine varied contribution behaviors, to evaluate their degree of compliance to solidarity practices, and propose rules to reward well-behaved behaviors and penalize the bad practices.This helps to refine the rules,
 
 The same agent will be used in operations as a dashboard to show people how, in case of crisis, their behaviors will result in community help, to motivate good behaviors.
-#	Project "*Knights of the Round Table*": Loss Simulation & Distress Voting
+##	Project "*Knights of the Round Table*": Loss Simulation & Distress Voting
 This project has its name from the legendary King Arthur and his Knights of the Round Table, symbolizing a diverse group who come together to serve a common purpose, upholding justice and protecting the kingdom https://youtu.be/4Gt99POfaSk. 
 
 The purpose of the agent is to gather a number of persons closest persons to the demander (for example Ms. *Lakshmi Devi*) and ask them to vote whether they agree or not with the actual need. Closeness is measured by the scalar distance of the embeddings.
