@@ -55,7 +55,7 @@ See an AI example here: https://kvutien-yes.medium.com/hands-on-how-ai-can-help-
 
 Some possible projects in the hackathon could be:
 1. **Project "Wonderful Life"**: An agent that uses AI to simulate free text profiles of persons in need, living in various countries in the world. It uses an SLM to create embeddings and stores the profiles + embeddings on IPFS and their CID hashes on blockchain. Given a Program sheet of an international Helper Program, it finds all potential beneficiaries of such Helper Program.
-2. **Project "Three Musketeers"**: TO BE DEFINED
+2. **Project "Three Musketeers"**: Gamification of the project "*Wonderful Life*". TO BE DEFINED
 3. **Project "Good Samaritan"**: An agent that would be given a person in need suffering a crop loss requesting an amount of ERC20 tokens, retrieve its CID on the blockchain, read on IPFS the profile + embedding of this person, find 100 closest profiles, transfer from each wallet of these persons 1/100 of the ERC20 amount needed to help the person in need
 4. **Project "Robin Hood"**: An agent that simulates at any moment the potential maximum entitlement of a person contributing to the risk-sharing pool. The results are used to define the risk-sharing agreement. In operation this evaluation of potential help can be used to motivate the persons to join.
 5. **Project "Knights of the Round Table"**: An agent that would use the quick Google Earth Engine webapp from the code of illustration 5 above and decide on the reality of a crop loss and a financial distress to trigger help.
