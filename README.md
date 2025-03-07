@@ -3,7 +3,7 @@
 ## Context of the Document
 This document reminds what is **Machu Picchu** and describes potential **hackhathon or bootcamp projects** that can be carried out on the theme of Machu Picchu.
 
-The Inca citadel Machu Picchu was built using **huge stones, themselves well crafted, that are assembled together to make even bigger monuments**.
+The Inca citadel Machu Picchu was built using **huge stones, themselves well crafted, that are assembled together to make even bigger monuments**. https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/f1637af4-0381-402b-9ffe-3624dfc0d1ba-machu-picchu
 ![Machu Picchu Citadel](./images/0-Machu_Picchu-2025.jpg)
 
 Machu Picchu is an open-source project that leverages 21st century tools for humanitarian purposes: https://kvutien-yes.medium.com/project-machu-picchu-white-paper-2024-part-1-735b60c55a92. 
