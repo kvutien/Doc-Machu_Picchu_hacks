@@ -1,7 +1,7 @@
 *Work in Progress on January 29* …
-# Machu Picchu stories in ETH Global 2025
+# Machu Picchu stories for hack projects
 ## Context of the Document
-This document reminds what is **Machu Picchu** and describes potential **ETH Global 2025 projects** that can be carried out on the theme of Machu Picchu.
+This document reminds what is **Machu Picchu** and describes potential **hackhathon or bootcamp projects** that can be carried out on the theme of Machu Picchu.
 
 The Inca citadel Machu Picchu was built using **huge stones, themselves well crafted, that are assembled together to make even bigger monuments**.
 ![Machu Picchu Citadel](./images/0-Machu_Picchu-2025.jpg)
@@ -12,9 +12,9 @@ With the severe cuts that the new US Trump administration has imposed on humanit
 
 
 # Executive Summary
-This document is a list of scenarios that can support hackathon projects in **ETHGlobal 2025**. The scenarios belong to the context of Machu Picchu.
+This document is a list of scenarios that can support hackathon or bootcamp projects. The scenarios belong to the context of Machu Picchu.
 
-The Machu Picchu stories can inspire several competing ETHGlobal projects, where each project will focus on a particular aspect of Machu Picchu as best suits the skills of the team. Machu Picchu is like the Inca citadel of same name, that is made of huge stone blocks tightly fit together. These blocks of stone can be done independently. In past prototypes, Machu Picchu applied tools in DeFi, IPFS, AI, Earth Observation, low-cost Raspberry Pi-style SBCs with AI HATs.
+The Machu Picchu stories can inspire several hacking projects, where each project will focus on a particular aspect of Machu Picchu as best suits the skills of the team. Machu Picchu is like the Inca citadel of same name, that is made of huge stone blocks tightly fit together. These blocks of stone can be done independently. In past prototypes, Machu Picchu applied tools in DeFi, IPFS, AI, Earth Observation, low-cost Raspberry Pi-style SBCs with AI HATs.
 
 The AI Agents are potentially Machu Picchu blocks. In this hackathon each project may choose to address a subset of Machu Picchu functions that best suits the skills of the team yet to be built. Even if you prefer doing a hackathon project alone around Machu Picchu, you are heartily welcome.
 
@@ -131,7 +131,7 @@ This project has its name from the legendary King Arthur and his Knights of the 
 The purpose of the agent is to gather a number of persons closest persons to the demander (for example Ms. *Lakshmi Devi*) and ask them to vote whether they agree or not with the actual need. Closeness is measured by the scalar distance of the embeddings.
 ![Knights of the Round Table](./images/3-round_table.jpg)
 
-# Lessons learned from the ETH Global hackathon *Agentic Ethereum*
+# Bonus: Lessons learned from the ETH Global 2025 hackathon *Agentic Ethereum*
 All the project descriptions are listed here (select event = *Agentic Ethereum*): https://ethglobal.com/showcase
 
 ## My analysis of the 10 Finalists:
